@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Store Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/flowbite@2.2.0/dist/flowbite.min.js"></script>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white text-center py-20 px-4">
+    <h1 class="text-4xl font-bold">Power Up Your Productivity</h1>
+    <p class="mt-4 text-lg">Explore our latest collection of high-performance PCs & laptops.</p>
+    <a href="products.html" class="mt-6 inline-block bg-blue-600 px-6 py-2 rounded-full text-white">Shop Now</a>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-10 px-4">
+    <h2 class="text-2xl font-semibold text-center mb-6">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Product Card -->
+      <div class="border rounded-lg p-4 shadow hover:shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Gaming PC" class="rounded mb-3">
+        <h3 class="font-bold text-lg">Gaming PC i9 RTX 4070</h3>
+        <p class="text-gray-500">$1,499</p>
+        <a href="product.html" class="text-blue-600 underline mt-2 inline-block">View</a>
+      </div>
+      <!-- More cards... -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10 text-sm">
+    &copy; 2025 TechStore. All rights reserved.
+  </footer>
+
+  <!-- Product Listing -->
+<section class="py-10 px-4">
+  <h2 class="text-2xl font-semibold mb-6">All Products</h2>
+
+  <!-- Filters -->
+  <div class="flex flex-wrap gap-4 mb-6">
+    <select class="border px-4 py-2 rounded">
+      <option>Filter by Brand</option>
+      <option>ASUS</option>
+      <option>HP</option>
+    </select>
+    <select class="border px-4 py-2 rounded">
+      <option>Sort by Price</option>
+      <option>Low to High</option>
+      <option>High to Low</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Product Card -->
+    <div class="border rounded-lg p-4">
+      <img src="https://via.placeholder.com/300x200" alt="PC" class="mb-3">
+      <h3 class="font-bold text-lg">Office PC i5 SSD</h3>
+      <p class="text-gray-500">$799</p>
+      <a href="product.html" class="text-blue-600 underline">View</a>
+    </div>
+    <!-- More cards... -->
+  </div>
+</section>
+
+
+<!-- Product Detail -->
+<section class="py-10 px-4">
+  <div class="grid md:grid-cols-2 gap-8">
+    <img src="https://via.placeholder.com/500x300" alt="PC" class="rounded shadow">
+    <div>
+      <h2 class="text-2xl font-bold mb-2">Gaming PC i9 32GB RAM</h2>
+      <p class="text-gray-600 mb-2">High performance desktop for gaming and editing.</p>
+      <p class="text-xl font-semibold mb-4">$1,499</p>
+      <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Add to Cart</button>
+    </div>
+  </div>
+</section>
+<!-- Product Detail -->
+<section class="py-10 px-4">
+  <div class="grid md:grid-cols-2 gap-8">
+    <img src="https://via.placeholder.com/500x300" alt="PC" class="rounded shadow">
+    <div>
+      <h2 class="text-2xl font-bold mb-2">Gaming PC i9 32GB RAM</h2>
+      <p class="text-gray-600 mb-2">High performance desktop for gaming and editing.</p>
+      <p class="text-xl font-semibold mb-4">$1,499</p>
+      <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Cart Page -->
+<section class="py-10 px-4 max-w-3xl mx-auto">
+  <h2 class="text-2xl font-bold mb-6">Your Cart</h2>
+  <div class="space-y-4">
+    <!-- Cart Item -->
+    <div class="flex justify-between items-center border p-4 rounded">
+      <div>
+        <h3 class="font-semibold">Gaming PC RTX 4070</h3>
+        <p class="text-gray-600">Qty: 1</p>
+      </div>
+      <p class="font-bold">$1,499</p>
+    </div>
+
+    <!-- Summary -->
+    <div class="text-right mt-6">
+      <p class="text-lg font-semibold">Subtotal: $1,499</p>
+      <button class="bg-green-600 text-white px-6 py-2 rounded mt-2">Checkout</button>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

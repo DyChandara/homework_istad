@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script>
+    document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+    );
+    localStorage.theme = "dark";
+    
+    function changeDarkMode() {
+        document.documentElement.classList.add("dark");
+        console.log("DarkMode")
+        localStorage.setItem("theme", "dark");
+        localStorage.theme = "dark";
+    }
+    function changeLightMode() {
+        document.documentElement.classList.remove("dark");
+        console.log("LightMode");
+        localStorage.removeItem("theme");
+        localStorage.theme = "light";
+    }
+
+
+</script>
+
+</head>
+<body>
+    <!-- card-image 1 -->
+    <!-- <div class="card-image0">
+        <img src="https://picsum.photos/200/300" alt="Image 1" class="w-full h-auto">
+        <div class="card-content">
+            <h2 class="text-xl font-bold">Card Title 1</h2>
+            <p class="text-gray-700">This is a description for card 1.</p>
+        </div> -->
+
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-4">
+
+            <div class="cart-image">
+                <!-- card-image  -->
+                <img src="./catGanster.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+<!-- card-image  -->
+            <div class="cart-image">
+                <img src="./CatSea.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+<!-- card-image  -->
+            <div class="cart-image">
+                <img src="./CatSteav.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+<!-- card-image  -->
+            <div class="cart-image">
+                <img src="./dogItanic.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+<!-- card-image  -->
+       <div class="cart-image">
+                <img src="./dogSleepOnBook.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+<!-- card-image  -->
+       <div class="cart-image">
+                <img src="./dogUsePc.jpg" alt="Image 2" class="rounded-lg">
+            </div>
+
+<!-- adding button -->
+ <!-- <div class="flex items-center justify-center">
+    <button class="p-2 bg-blue-400 font-bold rounded-lg w-25 text-white hover:bg-red-400 
+    focus:ring-cyan-400 focus:ring-2
+    active:text-black 
+    ">
+        <a href="https://www.pinterest.com/" target="_blank" class="visited:text-amber-200">Next</a>
+    </button>
+</div> -->
+
+
+  <!-- button toggle light mode and dark mode -->
+   
+     <button class="p-2 w-25 bg-blue-200 mt-5 rounded-lg" 
+     onclick="changeDarkMode()"
+     >
+        Dark Mode
+     </button>
+     <button class="p-2 w-25 bg-red-200 mt-5 rounded-lg" 
+       onclick="changeLightMode()"
+     >
+        Light Mode
+     </button>
+
+     <!-- card apply with dark mode and light mode -->
+    <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+        <div>
+            <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                <svg class="h-6 w-6 stroke-white" ...>
+                    <!-- ... -->
+                </svg>
+            </span>
+        </div>
+        <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>
+        <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
+            The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer
+            space.
+        </p>
+    </div>
+<html class="dark">
+  <body>
+    <div class="bg-white dark:bg-black">
+      <!-- ... -->
+    </div>
+  </body>
+</html>
+
+
+</body>
+</html>
